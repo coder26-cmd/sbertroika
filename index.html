@@ -4,29 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/fontawesome-free-6.1.2-web/css/all.min.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="/css/jquery.fancybox.min.css">
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <title>СберТройка Трэвел</title>
 </head>
 <body>
+
     <div class="main">
         <header class="header">
             <a href="#"><img class="logo" src="/images/sberlogo.svg"></a>
             <a href="#">О нас</a>
             <a href="#">Тройка</a>
-            <a href="#">Регионы</a>
+            <a href="/views/region.html">Регионы</a>
             <a href="#">Новости</a>
         </header>
         <div class="first-page">
             <img class="person" src="/images/person.png">
+            <a data-fancybox href="https://sbertroika.ru/upload/medialibrary/93c/x34tfb1fvzpk99fd5snlmay4pv4p0kfp.mp4" class="play">
+                <span class="fa-solid fa-play"></span>
+            </a>
             <div class="main-entry">
-                <h2 class="main-title">Поехали смотреть страну!</h2>
+                <div>
+                    <h2 class="main-title">Поехали смотреть страну?</h2>
+                </div>
                 <div class="search-set">
-                    <input type="text" class="search">
-                    <button><span class="fa-solid fa-magnifying-glass"></span></button>
+                    <select>
+                        <option>Куда поедем?</option>
+                    </select>
+                    <button class="search-btn"><span class="fa-solid fa-magnifying-glass"></span></button>
+                </div>
+                <span>ИЛИ</span>
+                <div class="dest-select">
+                    <button class="sea dest-btn"><span class="fa-solid fa-sun"></span> Море</button>
+                    <button class="nature dest-btn"><span class="fa-solid fa-leaf"></span> Природа</button>
+                    <button class="hist dest-btn"><span class="fa-solid fa-map"></span> История</button>
+                    <button class="adv dest-btn"><span class="fa-solid fa-dice"></span> Не знаю</button>
                 </div>
             </div>
         </div>
+        <div class="about-sect">
+            <h2 class="sect-title">Почему внутренний туризм?</h2>
+            <p>
+
+            </p>
+        </div>
+        <div class="why-sect">
+            <h2 class="sect-title">Почему Тройка - лучший помощник в путешествии по России?</h2>
+            <div class="advantage">
+                <img class="adv-img" src="/images/coins.webp">
+                <div>
+                    <h3 class="adv-title">Экономия</h3>
+                    <p class="adv-desc">
+                        Тройка помогает экономить. Например, в Ульяновской области стоимость проезда по транспортной карте «Тройке» составляет 20 руб, в то время как проезд за наличный расчет дороже на 2 рубля.
+                    </p>
+                </div>
+            </div>
+            <div class="advantage">
+                <img class="adv-img" src="/images/earth.webp"> 
+                <div>
+                    <h3 class="adv-title">Универсальность</h3>
+                    <p class="adv-desc">
+                        Карта Тройка действует в 22 регионах, что позволяет 
+                    </p>
+                </div>       
+            </div>
+        </div>
+        <div class="map-section">
+            <h2 class="sect-title">В каких регионах можно отправиться с Тройкой?</h2>
+            <iframe class="map" src="/map/test.html" onload="this.width=screen.width/2;this.height=screen.height;"></iframe>
+        </div>
     </div>
+    <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
 </body>
 </html>

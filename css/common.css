@@ -1,0 +1,20 @@
+@font-face {
+    font-family: "MS Regular";
+    src: url("/fonts/MoscowSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "MS Light";
+    src: url("/fonts/MoscowSans-Light.otf");
+}
+
+@font-face {
+    font-family: "MS Bold";
+    src: url("/fonts/MoscowSans-Bold.otf");
+}
+
+
+*{
+    margin: 0;
+    font-family: "MS Light", sans-serif;
+}

@@ -1,0 +1,29 @@
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+    background-color: blueviolet;
+}
+
+.logo{
+    width: 200px;
+}
+
+.header a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    transition: all ease-in-out 0.2s;
+}
+
+.header a:hover{
+    color: rgb(0, 69, 116);
+    font-size: 23px;
+}
+
