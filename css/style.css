@@ -1,20 +1,48 @@
+@font-face {
+    font-family: "MS Regular";
+    src: url("/fonts/MoscowSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "MS Light";
+    src: url("/fonts/MoscowSans-Light.ttf");
+}
+
 *{
     margin: 0;
-    
+    font-family: "MS Light", sans-serif;
 }
 
 .main{
-    background-color: red;
+    background-color: skyblue;
 }
 
 .header{
-    position: sticky;
-    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: inline-flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
 }
 
 .logo{
-    width: 200px;;
+    width: 200px;
+}
+
+header a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+
+header a:hover{
+
+}
+
+.first-page{
+    height: 100vh;
+    background-image: url("/images/bg.png");
 }
