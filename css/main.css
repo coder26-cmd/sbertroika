@@ -33,14 +33,17 @@
 .first-page{
     height: 100vh;
     background-image: url("/images/bg.png");
+    padding-bottom: 350px;
+    margin-bottom: -350px;
 }
 
 .person{
     height: 500px;
-    position: absolute;
+    position: fixed;
     right: 10%;
     bottom: 0;
     filter: blur(2px);
+    z-index: 0;
 }
 
 .main-entry{
@@ -71,17 +74,18 @@
 }
 
 .map{
-    width: 50%;
+    width: 500px;
     margin: auto;
     height: 300px;
     border: none;
     overflow: hidden;
+
 }
 
 .sect-title{
     text-align: center;
     font-weight: bold;
-    font-family: "MS Bold";
+    font-family: "MS Bold", sans-serif;
     font-size: 30px;
     width: 100%;
 }
@@ -90,6 +94,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
 }
 
 .play{
@@ -123,7 +128,7 @@
     border: none;
     width: 125px;
     height: 35px;
-    font-family: "MS Bold";
+    font-family: "MS Bold", sans-serif;
     font-size: 15px;
     transition: all ease-in-out 0.2s;
 }
@@ -182,7 +187,10 @@
 }
 
 .about-sect{
-
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 0 100px 0 100px;
 }
 
 .advantage{
@@ -195,12 +203,32 @@
 }
 
 .adv-title{
-    font-family: 'MS Regular';
+    font-family: 'MS Regular', sans-serif;
     font-weight: 600;
     font-size: 30px;
     margin-bottom: 40px;
 }
 
-.adv-desc{
+.desc{
     font-size: 20px;
 }
+
+.why-sect{
+    margin: 40px;
+}
+
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+    
+

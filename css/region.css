@@ -27,3 +27,36 @@
     font-size: 23px;
 }
 
+.region-name{
+    width: 100%;
+    text-align: center;
+    font-family: "MS Bold", sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 20px 0px 20px 0px;
+}
+
+.region-card{
+    display: flex;
+    flex-direction: column;
+}
+
+.general-info{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 22px;
+}
+
+.region-image{
+    height: 300px;
+}
+
+.main{
+    padding: 0px 200px 0px 200px;
+}
+
+.fa-snowflake{
+    color: rgb(32, 91, 255);
+}
+
