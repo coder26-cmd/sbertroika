@@ -5,8 +5,14 @@
 
 @font-face {
     font-family: "MS Light";
-    src: url("/fonts/MoscowSans-Light.ttf");
+    src: url("/fonts/MoscowSans-Light.otf");
 }
+
+@font-face {
+    font-family: "MS Bold";
+    src: url("/fonts/MoscowSans-Bold.otf");
+}
+
 
 *{
     margin: 0;
@@ -36,13 +42,40 @@ header a{
     text-decoration: none;
     font-size: 20px;
     color: black;
+    transition: all ease-in-out 0.2s;
 }
 
 header a:hover{
-
+    color: rgb(0, 69, 116);
+    font-size: 23px;
 }
 
 .first-page{
     height: 100vh;
     background-image: url("/images/bg.png");
+}
+
+.person{
+    height: 500px;
+    position: absolute;
+    right: 10%;
+    bottom: 0;
+}
+
+.main-entry{
+    position: absolute;
+    top: 35%;
+    left: 5%;
+    font-size: 40px;
+}
+
+.main-title{
+    font-family: "MS Bold", sans-serif;
+}
+
+
+.search-set{
+    display: inline-flex;
+    flex-direction: row;
+    gap: 5px;
 }
