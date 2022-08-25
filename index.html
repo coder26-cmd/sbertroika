@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="stylesheet" href="/css/common.css">
-    <link rel="stylesheet" href="/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="/plugins/fontawesome-free-6.1.2-web/css/all.min.css">
     <link rel="stylesheet" href="/css/jquery.fancybox.min.css">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -19,7 +19,7 @@
             <a href="#"><img class="logo" src="/images/sberlogo.svg"></a>
             <a href="#">О нас</a>
             <a href="#">Тройка</a>
-            <a href="/views/region.html">Регионы</a>
+            <a href="/views/regions.html">Регионы</a>
             <a href="#">Новости</a>
         </header>
         <div class="first-page">
@@ -29,7 +29,7 @@
             </a>
             <div class="main-entry">
                 <div>
-                    <h2 class="main-title">Поехали смотреть страну?</h2>
+                    <h2 class="main-title animate__animated animate__slideInLeft">Поехали смотреть страну?</h2>
                 </div>
                 <div class="search-set">
                     <select>
@@ -59,7 +59,7 @@
                     </select>
                     <button class="search-btn"><span class="fa-solid fa-magnifying-glass"></span></button>
                 </div>
-                <span>ИЛИ</span>
+                <span class="or">ИЛИ</span>
                 <div class="dest-select">
                     <button class="sea dest-btn"><span class="fa-solid fa-sun"></span> Море</button>
                     <button class="nature dest-btn"><span class="fa-solid fa-leaf"></span> Природа</button>
@@ -103,7 +103,7 @@
         </div>
         <div class="map-section">
             <h2 class="sect-title">В каких регионах можно отправиться с Тройкой?</h2>
-            <iframe class="map" src="/map/test.html" onload="this.width=screen.width/2;this.height=screen.height;"></iframe>
+            <iframe class="map" src="/plugins/map/test.html" onload="this.width=screen.width/2;this.height=screen.height;"></iframe>
         </div>
     </div>
     <script src="js/jquery-3.5.1.slim.min.js"></script>

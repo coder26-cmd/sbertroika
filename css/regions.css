@@ -1,0 +1,74 @@
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 1;
+    background-color: blueviolet;
+}
+
+.logo{
+    width: 200px;
+}
+
+.header a{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    transition: all ease-in-out 0.2s;
+}
+
+.header a:hover{
+    color: rgb(0, 69, 116);
+    font-size: 23px;
+}
+
+.header { 
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+}
+
+.main{
+    padding: 0px 200px 0px 200px;
+    display: flex;
+    flex-direction: column;
+}
+
+.region-img{
+    height: 150px;
+    border-radius: 10px;
+}
+
+.region-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 50px;
+    background: #fff;
+    box-shadow:  9px 9px 25px #c3c3c3,
+                -9px -9px 25px #fdfdfd;
+    padding: 30px;
+}
+
+h2.title{
+    font-size: 19px;
+    font-style: italic;
+    margin: 50px 0px;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
