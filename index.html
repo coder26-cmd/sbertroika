@@ -16,9 +16,10 @@
 
     <div class="main">
         <header class="header">
-            <a href="#"><img class="logo" src="/images/sberlogo.svg"></a>
+            <a href="index.html"><img class="logo" src="/images/sberlogo.svg"></a>
             <a href="#">О нас</a>
             <a href="#">Тройка</a>
+            <a href="#">Проекты</a>
             <a href="/views/regions.html">Регионы</a>
             <a href="#">Новости</a>
         </header>
@@ -32,8 +33,8 @@
                     <h2 class="main-title animate__animated animate__slideInLeft">Поехали смотреть страну?</h2>
                 </div>
                 <div class="search-set">
-                    <select>
-                        <option>Куда поедем?</option>
+                    <select class="search-select">
+                        <option disabled selected>Куда поедем?</option>
                         <option>Москва</option>
                         <option>Московская область</option>
                         <option>Тульская область</option>
@@ -87,7 +88,7 @@
                 <div>
                     <h3 class="adv-title">Экономия</h3>
                     <p class="desc">
-                        Тройка помогает экономить. Например, в Ульяновской области стоимость проезда по транспортной карте «Тройке» составляет 20 руб, в то время как проезд за наличный расчет дороже на 2 рубля.
+                        Тройка помогает экономить деньги и время. Например, в Ульяновской области стоимость проезда по транспортной карте «Тройке» составляет 20 руб, в то время как проезд за наличный расчет дороже на 2 рубля. Тройку также можно пополнить дистанционно, не тратя времени в очереди на кассе.
                     </p>
                 </div>
             </div>
@@ -96,13 +97,13 @@
                 <div>
                     <h3 class="adv-title">Универсальность</h3>
                     <p class="desc">
-                        Карта Тройка действует в 22 регионах, что позволяет 
+                        Карта Тройка действует в 22 регионах, что позволяет оплачивать проезд не только в Москве, но и других регионах, где внедрена и работает билетная система «СберТройки».
                     </p>
                 </div>       
             </div>
         </div>
         <div class="map-section">
-            <h2 class="sect-title">В каких регионах можно отправиться с Тройкой?</h2>
+            <h2 class="sect-title">В каких регионах можно путешествовать с Тройкой?</h2>
             <iframe class="map" src="/plugins/map/test.html" onload="this.width=screen.width/2;this.height=screen.height;"></iframe>
         </div>
     </div>

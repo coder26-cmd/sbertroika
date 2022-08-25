@@ -232,3 +232,8 @@
 .why-sect{
     margin: 40px;
 }
+
+.search-select{
+    width: 480px;
+    font-size: 20px;
+}
