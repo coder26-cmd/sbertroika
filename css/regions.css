@@ -58,9 +58,26 @@ h2.title{
     filter: none;
 }
 
-.region-card:nth-child(1){
+.region-card-wrap:nth-child(1) .region-card{
+    background-image: url('https://cdnn21.img.ria.ru/images/07e4/05/07/1571110736_0:159:3078:1890_1920x0_80_0_0_4703619035e50b76f34cd8e999857654.jpg');
+}
+
+.region-card-wrap:nth-child(2) .region-card{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Lavra_irinakv.jpg/290px-Lavra_irinakv.jpg');
+}
+
+.region-card-wrap:nth-child(3) .region-card{
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/%D0%91%D0%B5%D0%BB%D1%8B%D0%B9_%D0%B4%D0%BE%D0%BC_%D0%9A%D0%91%D0%A0.jpg/290px-%D0%91%D0%B5%D0%BB%D1%8B%D0%B9_%D0%B4%D0%BE%D0%BC_%D0%9A%D0%91%D0%A0.jpg');
+}
+
+.region-card-wrap:nth-child(4) .region-card{
     background-image: url('https://all.accor.com/magazine/imagerie/1-6d7f.jpg');
 }
+
+.region-card-wrap:nth-child(5) .region-card{
+    background-image: url('https://aif-s3.aif.ru/images/018/070/c9e2c69f4dda27db908e880244240c73.jpg');
+}
+
 
 .region-card{
     height: 150px;
@@ -101,4 +118,13 @@ h2.title{
 	100% {
 		background-position: 0% 50%;
 	}
+}
+
+.region-cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
 }

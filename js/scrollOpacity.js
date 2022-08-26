@@ -9,6 +9,8 @@ $(window).scroll(function () {
     });
 });
 
+var links = document.querySelectorAll('.header a')
+
 function opacityUpdate (){
     if (person.style.opacity < 0) {
         person.style.display = 'none'
@@ -17,8 +19,14 @@ function opacityUpdate (){
     }
     if (window.scrollY < 50) {
         header.style.background = 'transparent';
+        for (let link of links){
+            link.style.color = 'black'
+        }
     } else {
         header.style.background = '';
+        for (let link of links){
+            link.style.color = 'white'
+        }
     }
 }
 
