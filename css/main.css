@@ -212,7 +212,8 @@
 }
 
 .adv-img {
-    height: 300px;
+    width: 175px;
+    padding: 40px;
 }
 
 .adv-title{
