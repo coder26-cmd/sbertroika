@@ -50,6 +50,7 @@
 
 .region-image{
     height: 350px;
+    border-radius: 20px;
 }
 
 .main{
@@ -100,6 +101,7 @@ div.swiper-button-prev, div.swiper-button-next{
 
 .region-desc{
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .sights-title{
@@ -107,4 +109,5 @@ div.swiper-button-prev, div.swiper-button-next{
     font-weight: bold;
     font-family: 'MS Bold', sans-serif;
     font-size: 25px;
+    margin-bottom: 10px;
 }

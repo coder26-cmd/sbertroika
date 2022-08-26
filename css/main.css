@@ -124,6 +124,11 @@
     right: 20%;
     top: 45%;
     font-size: 25px;
+    transition: font-size 0.2s ease-in-out;
+}
+
+.play:hover{
+    font-size: 32px;
 }
 
 .dest-select{
