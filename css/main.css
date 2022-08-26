@@ -87,6 +87,17 @@
     border-radius: 10px;
     width: 35px;
     height: 35px;
+    border-radius: 10px;
+    background: #ffffff;
+    box-shadow:  4px 4px 7px #d9d9d9,
+                -4px -4px 7px #ffffff;
+    transition: all 0.2s ease-in;
+}
+
+.search-btn:hover{
+    color: white;
+    background: black;
+    cursor: pointer;
 }
 
 .map{
@@ -127,6 +138,7 @@
     align-items: center;
     right: 20%;
     top: 45%;
+    font-size: 25px;
 }
 
 .dest-select{
@@ -236,4 +248,17 @@
 .search-select{
     width: 480px;
     font-size: 20px;
+}
+
+.or{
+    width: 520px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.fa-magnifying-glass{
+    font-size: 23px;
 }
