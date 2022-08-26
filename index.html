@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="/css/common.css">
     <link rel="stylesheet" href="/plugins/fontawesome-free-6.1.2-web/css/all.min.css">
     <link rel="stylesheet" href="/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="/plugins/notification/notifications.css">
     <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>СберТройка Трэвел</title>
@@ -34,29 +35,29 @@
                 </div>
                 <div class="search-set animate__animated animate__slideInLeft animate__fast">
                     <select class="search-select">
-                        <option disabled selected>Куда поедем?</option>
-                        <option>Москва</option>
-                        <option>Московская область</option>
-                        <option>Тульская область</option>
-                        <option>Нальчик</option>
-                        <option>Республика Карелия</option>
-                        <option>Хабаровский край</option>
-                        <option>Пермский край</option>
-                        <option>Республика Алтай</option>
-                        <option>Орловская область</option>
-                        <option>Ростовская область</option>
-                        <option>Томская область</option>
-                        <option>Новосибирская область</option>
-                        <option>Ленинградская область</option>
-                        <option>Иркутск</option>
-                        <option>Республика Ингушетия</option>
-                        <option>Воронежская область</option>
-                        <option>Ямало-Ненецкий автономный округ</option>
-                        <option>Республика Якутия</option>
-                        <option>Курск</option>
-                        <option>Саратов</option>
-                        <option>Костромская область</option>
-                        <option>Республика Удмуртия</option>
+                        <option disabled selected value="0">Куда поедем?</option>
+                        <option value="1">Москва</option>
+                        <option value="2">Московская область</option>
+                        <option value="3">Тульская область</option>
+                        <option value="4">Нальчик</option>
+                        <option value="5">Республика Карелия</option>
+                        <option value="6">Хабаровский край</option>
+                        <option value="7">Пермский край</option>
+                        <option value="8">Республика Алтай</option>
+                        <option value="9">Орловская область</option>
+                        <option value="10">Ростовская область</option>
+                        <option value="11">Томская область</option>
+                        <option value="12">Новосибирская область</option>
+                        <option value="13">Ленинградская область</option>
+                        <option value="14">Иркутск</option>
+                        <option value="15">Республика Ингушетия</option>
+                        <option value="16">Воронежская область</option>
+                        <option value="17">Ямало-Ненецкий автономный округ</option>
+                        <option value="18">Республика Якутия</option>
+                        <option value="19">Курск</option>
+                        <option value="20">Саратов</option>
+                        <option value="21">Костромская область</option>
+                        <option value="22">Республика Удмуртия</option>
                     </select>
                     <button class="search-btn"><span class="fa-solid fa-magnifying-glass"></span></button>
                 </div>
@@ -72,13 +73,12 @@
         <div class="about-sect">
             <h2 class="sect-title">Почему внутренний туризм?</h2>
             <p class="desc">
-                По сравнению с выездным туризмом внутренний имеет ряд преимуществ:
-
-                это наиболее дешёвый вариант путешествий;
-                для поездки не нужно иметь загранпаспорт;
-                нет необходимости обращаться в туристическую компанию или консульство для оформления визы;
-                не возникает проблем с акклиматизацией, способной испортить отдых;
-                позволяет гражданам больше узнать о своей родине, посетить исторические и культурные места и достопримечательности.
+                По сравнению с выездным туризмом внутренний имеет ряд преимуществ:<br>
+                1. это наиболее дешёвый вариант путешествий;<br>
+                2. для поездки не нужно иметь загранпаспорт;<br>
+                3. нет необходимости обращаться в туристическую компанию или консульство для оформления визы;<br>
+                4. не возникает проблем с акклиматизацией, способной испортить отдых;<br>
+                5. позволяет гражданам больше узнать о своей родине, посетить исторические и культурные места и достопримечательности.<br>
             </p>
         </div>
         <div class="why-sect">
@@ -108,7 +108,9 @@
         </div>
     </div>
     <script src="js/jquery-3.5.1.slim.min.js"></script>
+    <script src="/plugins/notification/notifications.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="/js/scrollOpacity.js""></script>
+    <script src="/js/search.js"></script>
 </body>
 </html>
