@@ -1,5 +1,12 @@
 var searchBtn = document.querySelector('.search-btn')
 var selectMenu = document.querySelector('.search-select')
+var diceBtn = document.querySelector('.adv')
+
+function randomInteger(min, max) {
+    // получить случайное число от (min-0.5) до (max+0.5)
+    let rand = min - 0.5 + Math.random() * (max - min + 1);
+    return Math.round(rand);
+}
 
 searchBtn.addEventListener('click', function(evt) {
     console.log(selectMenu.value)
@@ -21,4 +28,8 @@ searchBtn.addEventListener('click', function(evt) {
             message: 'Информация о данном регионе еще не добавлена :('
 		});
     }
+})
+
+diceBtn.addEventListener('click', function(evt) {
+    window.location.replace('/views/dice.html')
 })
