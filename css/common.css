@@ -1,18 +1,17 @@
 @font-face {
     font-family: "MS Regular";
-    src: url("/fonts/MoscowSans-Regular.ttf");
+    src: url("../fonts/MoscowSans-Regular.ttf");
 }
 
 @font-face {
     font-family: "MS Light";
-    src: url("/fonts/MoscowSans-Light.otf");
+    src: url("../fonts/MoscowSans-Light.otf");
 }
 
 @font-face {
     font-family: "MS Bold";
-    src: url("/fonts/MoscowSans-Bold.otf");
+    src: url("../fonts/MoscowSans-Bold.otf");
 }
-
 
 *{
     margin: 0;
@@ -31,6 +30,10 @@
     }
 }
 
+.logo{
+    width: 200px;
+}
+
 .header {
     background: linear-gradient(-45deg, #315ef1, #a2e722, #ed1a25,#faed00);
     background-size: 400% 400%;
@@ -40,4 +43,27 @@
 
 header.header a{
     color: white;
+}
+
+.footer{
+    color: 100%;
+    margin-top: 20px;
+    background-color: #00abe9;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foot-logo{
+    height: 30px;
+}
+
+.footer-desc{
+    color: white;
+}
+
+.hack-logo{
+    height: 40px;
+    border-radius: 5px;
 }

@@ -1,6 +1,9 @@
 var searchBtn = document.querySelector('.search-btn')
 var selectMenu = document.querySelector('.search-select')
 var diceBtn = document.querySelector('.adv')
+var seaBtn = document.querySelector('.sea')
+var natureBtn = document.querySelector('.nature')
+var histBtn = document.querySelector('.hist')
 
 function randomInteger(min, max) {
     // получить случайное число от (min-0.5) до (max+0.5)
@@ -11,11 +14,8 @@ function randomInteger(min, max) {
 searchBtn.addEventListener('click', function(evt) {
     console.log(selectMenu.value)
     if (selectMenu.value == 5) {
-        window.location.replace('/views/region.html')
+        window.location.href = 'views/region.html'
     } else {
-        const myNotification = window.createNotification({
-            // options here
-        });
         window.createNotification({
 			closeOnClick: true,
             displayCloseButton: true,
@@ -28,8 +28,4 @@ searchBtn.addEventListener('click', function(evt) {
             message: 'Информация о данном регионе еще не добавлена :('
 		});
     }
-})
-
-diceBtn.addEventListener('click', function(evt) {
-    window.location.replace('/views/dice.html')
 })

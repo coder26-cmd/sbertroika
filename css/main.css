@@ -14,9 +14,7 @@
     z-index: 1;
 }
 
-.logo{
-    width: 200px;
-}
+
 
 .header a{
     text-decoration: none;
@@ -31,7 +29,7 @@
 
 .first-page{
     height: 100vh;
-    background-image: url("/images/bg.png");
+    background-image: url("../images/bg.png");
     padding-bottom: 350px;
     margin-bottom: -350px;
 }
@@ -146,8 +144,16 @@
     width: 125px;
     height: 35px;
     font-family: "MS Bold", sans-serif;
-    font-size: 15px;
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     transition: all ease-in-out 0.2s;
+    text-decoration: none;
+}
+
+.fa-sun, .fa-leaf, .fa-map, .fa-dice{
+    margin-right: 2px;
 }
 
 .dest-btn:not(.dest-btn:first-child){
@@ -252,3 +258,4 @@
 .fa-magnifying-glass{
     font-size: 23px;
 }
+

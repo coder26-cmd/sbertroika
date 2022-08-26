@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/main.css">
-    <link rel="stylesheet" href="/css/common.css">
-    <link rel="stylesheet" href="/plugins/fontawesome-free-6.1.2-web/css/all.min.css">
-    <link rel="stylesheet" href="/css/jquery.fancybox.min.css">
-    <link rel="stylesheet" href="/plugins/notification/notifications.css">
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="plugins/fontawesome-free-6.1.2-web/css/all.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="plugins/notification/notifications.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
     <title>СберТройка Трэвел</title>
 </head>
@@ -17,15 +17,15 @@
 
     <div class="main">
         <header class="header">
-            <a href="index.html"><img class="logo" src="/images/sberlogo.svg"></a>
-            <a href="#">О нас</a>
+            <a href="index.html"><img class="logo" src="images/sberlogo.svg"></a>
+            <a href="views/about.html">О нас</a>
             <a href="https://sbertroika.ru/proekty/">Тройка</a>
-            <a href="#">Проекты</a>
-            <a href="/views/regions.html">Регионы</a>
+            <a href="views/projects.html">Проекты</a>
+            <a href="views/regions.html">Регионы</a>
             <a href="#">Новости</a>
         </header>
         <div class="first-page">
-            <img class="person" src="/images/person.png">
+            <img class="person" src="images/person.png">
             <a data-fancybox href="https://sbertroika.ru/upload/medialibrary/93c/x34tfb1fvzpk99fd5snlmay4pv4p0kfp.mp4" class="play">
                 <span class="fa-solid fa-play"></span>
             </a>
@@ -63,14 +63,14 @@
                 </div>
                 <span class="or animate__animated animate__slideInLeft animate__fast">ИЛИ</span>
                 <div class="dest-select animate__animated animate__slideInLeft animate__fast">
-                    <button class="sea dest-btn"><span class="fa-solid fa-sun"></span> Море</button>
-                    <button class="nature dest-btn"><span class="fa-solid fa-leaf"></span> Природа</button>
-                    <button class="hist dest-btn"><span class="fa-solid fa-map"></span> История</button>
-                    <button class="adv dest-btn"><span class="fa-solid fa-dice"></span> Не знаю</button>
+                    <a href="views/sea.html" class="sea dest-btn"><span class="fa-solid fa-sun"></span>Море</a>
+                    <a href="views/nature.html" class="nature dest-btn"><span class="fa-solid fa-leaf"></span>Природа</a>
+                    <a href="views/history.html" class="hist dest-btn"><span class="fa-solid fa-map"></span>История</a>
+                    <a href="views/dice.html" class="adv dest-btn"><span class="fa-solid fa-dice"></span>Не знаю</a>
                 </div>
             </div>
         </div>
-        <div class="about-sect">
+        <div class="about-sect animate__animated animate__fadeInRight">
             <h2 class="sect-title">Почему внутренний туризм?</h2>
             <p class="desc">
                 По сравнению с выездным туризмом внутренний имеет ряд преимуществ:<br>
@@ -84,7 +84,7 @@
         <div class="why-sect">
             <h2 class="sect-title">Почему Тройка - лучший помощник в путешествии по России?</h2>
             <div class="advantage">
-                <img class="adv-img" src="/images/coins.png">
+                <img class="adv-img" src="images/coins.png">
                 <div>
                     <h3 class="adv-title">Экономия</h3>
                     <p class="desc">
@@ -93,7 +93,7 @@
                 </div>
             </div>
             <div class="advantage">
-                <img class="adv-img" src="/images/earth.png"> 
+                <img class="adv-img" src="images/earth.png"> 
                 <div>
                     <h3 class="adv-title">Универсальность</h3>
                     <p class="desc">
@@ -104,13 +104,18 @@
         </div>
         <div class="map-section">
             <h2 class="sect-title">В каких регионах можно путешествовать с Тройкой?</h2>
-            <iframe class="map" src="/plugins/map/test.html" onload="this.width=screen.width/2;this.height=screen.height;"></iframe>
+            <iframe src="plugins/map/test.html" class="map" onload="this.width=screen.width/2;this.height=screen.height;"></iframe>
         </div>
+        <footer class="footer">
+            <img class="foot-logo" src="images/sberlogo.png">
+            <p class="footer-desc">© Дизайн разработан командой ПИ</p>
+            <img src="images/hack.png" class="hack-logo">
+        </footer>
     </div>
     <script src="js/jquery-3.5.1.slim.min.js"></script>
-    <script src="/plugins/notification/notifications.js"></script>
+    <script src="plugins/notification/notifications.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
-    <script src="/js/scrollOpacity.js"></script>
-    <script src="/js/search.js"></script>
+    <script src="js/scrollOpacity.js"></script>
+    <script src="js/search.js"></script>
 </body>
 </html>
